@@ -1,94 +1,257 @@
 {
     "id" : 0,
-    "name" : "Alle branches",
+    "name" : "All cars",
     "categories" : [
         {
             "id" : 1,
-            "name" : "brancheA",
+            "name" : "Passenger cars",
             "categories" : [
                 {
                     "id" : 11,
-                    "name" : "brancheA1",
+                    "name" : "Family cars",
                     "items" : [
                         {
-                            "name" : "benchmarkgroup 4",
+                            "name" : "Opel Meriva",
 							"tags" : [
-								"tag1"
+								"MPV",
+								"Germany"
 							]
                         },
                         {
-                            "name" : "benchmarkgroup 5",
+                            "name" : "Dacia Duster",
 							"tags" : [
-								"tag2"
+								"All-terrain",
+								"Romenia"
 							]
                         },
                         {
-                            "name" : "benchmarkgroup 6"
+                            "name" : "Kia Venga",
+							"tags" : [
+								"MPV",
+								"South Korea"
+							]
+                        },
+                        {
+                            "name" : "Mitsubitsi ASX",
+							"tags" : [
+								"SUV",
+								"Japan"
+							]
+                        },
+						{
+                            "name" : "Nissan Cube",
+							"tags" : [
+								"Compact",
+								"MPV",
+								"Japan"
+							]
+                        },
+						{
+                            "name" : "Renault Megane Estate",
+							"tags" : [
+								"Estate",
+								"France"
+							]
+                        },
+						{
+                            "name" : "Seat Ibiza ST",
+							"tags" : [
+								"Estate",
+								"Spain"
+							]
+                        },
+						{
+                            "name" : "Toyota Auris FH",
+							"tags" : [
+								"Hybrid",
+								"Japan"
+							]
                         }
                     ]
                 },
                 {
                     "id" : 12,
-                    "name" : "brancheA2",
+                    "name" : "Luxury cars",
 					"items" : [
                         {
-                            "name" : "benchmarkgroup 7"
+                            "name" : "Fisker Karma",
+							"tags" : [
+								"Hybrid",
+								"Sports",
+								"USA"
+							]
                         },
                         {
-                            "name" : "benchmarkgroup 8"
+                            "name" : "BMW 5-series",
+							"tags" : [
+								"Sedan",
+								"Germany"
+							]
                         },
                         {
-                            "name" : "benchmarkgroup 9"
+                            "name" : "Chevrolet Volt",
+							"tags" : [
+								"Hybrid",
+								"USA"
+							]
+                        },
+						{
+                            "name" : "Audi A8",
+							"tags" : [
+								"Sedan",
+								"Germany"
+							]
+                        },
+						{
+                            "name" : "Jaguar XJ",
+							"tags" : [
+								"Sports",
+								"Great Britain"
+							]
                         }
                     ]
                 },
                 {
                     "id" : 13,
-                    "name" : "brancheA3",
+                    "name" : "Mini cars",
 					"items" : [
                         {
-                            "name" : "benchmarkgroup 10"
+                            "name" : "Smart Fortwo",
+							"tags" : [
+								"Germany"
+							]
                         },
                         {
-                            "name" : "benchmarkgroup 11"
+                            "name" : "Toyota iQ",
+							"tags" : [
+								"Japan"
+							]
                         },
                         {
-                            "name" : "benchmarkgroup 12"
+                            "name" : "Peugeot 107",
+							"tags" : [
+								"France"
+							]
+                        },
+						{
+                            "name" : "Citroen C1",
+							"tags" : [
+								"France"
+							]
+                        },
+						{
+                            "name" : "Toyota Aygo",
+							"tags" : [
+								"Japan"
+							]
                         }
                     ]
                 }
             ],
             "items" : [
                 {
-                    "name" : "benchmarkgroup 1"
+                    "name" : "BMW 3-series",
+					"tags" : [
+						"Sedan",
+						"Germany"
+					]
                 },
                 {
-                    "name" : "benchmarkgroup 2"
+                    "name" : "Volkswagen Passat",
+					"tags" : [
+						"Estate",
+						"Germany"
+					]
                 },
                 {
-                    "name" : "benchmarkgroup 3"
+                    "name" : "Audi A4",
+					"tags" : [
+						"Sedan",
+						"Germany"
+					]
+                },
+				{
+                    "name" : "Ford Focus",
+					"tags" : [
+						"Estate",
+						"Great Britain"
+					]
+                },
+				{
+                    "name" : "Peugeot 207",
+					"tags" : [
+						"MPV",
+						"France"
+					]
                 }
             ]
             
         },
         {
             "id" : 2,
-            "name" : "brancheB",
+            "name" : "Sport cars",
 			"items" : [
                 {
-                    "name" : "benchmarkgroup 13"
+                    "name" : "Porsche 911",
+					"tags" : [
+						"Germany"
+					]
                 },
                 {
-                    "name" : "benchmarkgroup 14"
+                    "name" : "BMW M3",
+					"tags" : [
+						"Germany"
+					]
                 },
                 {
-                    "name" : "benchmarkgroup 15"
+                    "name" : "Chevrolet Corvette",
+					"tags" : [
+						"USA"
+					]
+                },
+				{
+                    "name" : "Mini Cooper S",
+					"tags" : [
+						"Great Britain"
+					]
                 }
             ]
         },
         {
             "id" : 3,
-            "name" : "brancheC"
+            "name" : "Off-road cars",
+			"items" : [
+				{
+					"name" : "Hummer H2",
+					"tags" : [
+						"USA"
+					]
+				},
+				{
+					"name" : "Toyota FJ Cruiser",
+					"tags" : [
+						"Japan"
+					]
+				},
+				{
+					"name" : "Landrover LR3",
+					"tags" : [
+						"Great Britain"
+					]
+				},
+				{
+					"name" : "Mercedes Benz G-Class",
+					"tags" : [
+						"Germany"
+					]
+				},
+				{
+					"name" : "Jeep Wrangler",
+					"tags" : [
+						"USA"
+					]
+				}
+			]
         }
     ]
 }
