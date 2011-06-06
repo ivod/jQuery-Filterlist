@@ -1,0 +1,94 @@
+{
+    "id" : 0,
+    "name" : "Alle branches",
+    "categories" : [
+        {
+            "id" : 1,
+            "name" : "brancheA",
+            "categories" : [
+                {
+                    "id" : 11,
+                    "name" : "brancheA1",
+                    "items" : [
+                        {
+                            "name" : "benchmarkgroup 4",
+							"tags" : [
+								"tag1"
+							]
+                        },
+                        {
+                            "name" : "benchmarkgroup 5",
+							"tags" : [
+								"tag2"
+							]
+                        },
+                        {
+                            "name" : "benchmarkgroup 6"
+                        }
+                    ]
+                },
+                {
+                    "id" : 12,
+                    "name" : "brancheA2",
+					"items" : [
+                        {
+                            "name" : "benchmarkgroup 7"
+                        },
+                        {
+                            "name" : "benchmarkgroup 8"
+                        },
+                        {
+                            "name" : "benchmarkgroup 9"
+                        }
+                    ]
+                },
+                {
+                    "id" : 13,
+                    "name" : "brancheA3",
+					"items" : [
+                        {
+                            "name" : "benchmarkgroup 10"
+                        },
+                        {
+                            "name" : "benchmarkgroup 11"
+                        },
+                        {
+                            "name" : "benchmarkgroup 12"
+                        }
+                    ]
+                }
+            ],
+            "items" : [
+                {
+                    "name" : "benchmarkgroup 1"
+                },
+                {
+                    "name" : "benchmarkgroup 2"
+                },
+                {
+                    "name" : "benchmarkgroup 3"
+                }
+            ]
+            
+        },
+        {
+            "id" : 2,
+            "name" : "brancheB",
+			"items" : [
+                {
+                    "name" : "benchmarkgroup 13"
+                },
+                {
+                    "name" : "benchmarkgroup 14"
+                },
+                {
+                    "name" : "benchmarkgroup 15"
+                }
+            ]
+        },
+        {
+            "id" : 3,
+            "name" : "brancheC"
+        }
+    ]
+}
