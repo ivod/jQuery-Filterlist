@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Insert title here</title>
+<title>jQuery-Filterlist demo page</title>
 
 <link rel="stylesheet" type="text/css" href="css/filterlist.css" />
 
@@ -27,18 +27,18 @@ $(function() {
 </head>
 <body>
 
-<input type="text" id="searchfield" />
-<div id="filter">
-	<a href="#" id="filterupbutton">&laquo;back</a>
-	<span id="filterlabel"></span>
-	<input type="button" value="Specificeer &raquo;" id="filterbutton" />
+<div class="filterlist">
+	<input type="text" id="searchfield" placeholder="Enter search criteria" />
+	<div id="filter">
+		<a href="#" id="filterupbutton">&laquo;back</a>
+		<span id="filterlabel"></span>
+		<a href="#" id="filterbutton">Drill down &raquo;</a>
+	</div>
+	<div id="categorypopup">
+		<ul id="categorypopuplist"></ul>
+	</div>
+	<select id="mylist" size="15"></select>
 </div>
-<div id="categorypopup">
-	<ul id="categorypopuplist"></ul>
-</div>
-
-<select id="mylist" size="15">
-</select>
 
 </body>
 </html>

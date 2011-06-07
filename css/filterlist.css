@@ -1,3 +1,78 @@
+.filterlist {
+	font-family: "Lucida Sans", Arial, sans-serif;
+	font-size: 1em;
+	width: 400px;
+}
+
+#filter {
+	background: #F3F3F3;
+	margin: 3px 0;
+	padding: 5px;
+}
+
 #filterlabel {
-	clear: both;
+	font-size: .8em;
+	font-weight: bold;
+	width: 100%;
+}
+
+#filterupbutton {
+	background: url("images/bg_backbt.png") left center;
+	color: #FFF;
+	display: block;
+	float: left;
+	font-size: .7em;
+	font-weight: bold;
+	margin: -3px 3px 0 -3px;
+	padding: 4px 7px 5px 12px;
+	text-decoration: none;
+}
+
+#filterbutton {
+	background: #F3F3F3;
+	border-left: 1px solid #404040;
+	color: #404040;
+	display: block;
+	float: right;
+	font-size: .8em;
+	margin: -5px;
+	padding: 5px;
+	text-decoration: none;
+}
+
+#filterbutton.active {
+	background: #404040;
+	color: #FFF;
+	padding-bottom: 8px;
+}
+
+#categorypopup {
+	background: #404040;
+	color: #FFF;
+	position: absolute;
+	width: 400px;
+}
+
+#categorypopup ul {
+	font-size: .8em;
+	list-style: none;
+	margin: 0;
+	padding: 10px 10px 5px;
+}
+
+#categorypopup li {
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+
+.filterlist input#searchfield {
+	font-size: .8em;
+	padding: 3px;
+	width: 390px;
+}
+
+.filterlist select {
+	font-size: .7em;
+	padding: 3px;
+	width: 400px;
 }

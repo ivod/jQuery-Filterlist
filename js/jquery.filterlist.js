@@ -29,7 +29,7 @@ var methods = {
 					emptycategories: true,
 					showcategorylength: true,
 					searchbycategoryname: true,
-					searchmethod: "or"
+					searchmethod: "and"
 				};
 				
 				// Override defaults when set
@@ -72,9 +72,11 @@ var methods = {
 				
 				filterbutton.bind("click.filterlist", function(){
 					categorypopup.show();
+					filterbutton.addClass("active");
 					$(document).bind("mouseup.filterlist", function(event){
 						$(document).unbind("mouseup.filterlist");
 						categorypopup.hide();
+						filterbutton.removeClass("active");
 					});
 				});
 				
