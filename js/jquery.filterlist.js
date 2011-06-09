@@ -29,7 +29,10 @@ var methods = {
 					emptycategories: true,
 					showcategorylength: true,
 					searchbycategoryname: true,
-					searchmethod: "and"
+					searchmethod: "and",
+					search: true,
+					drilldown: true,
+					placeholder: "Enter search criteria"
 				};
 				
 				// Override defaults when set
@@ -39,6 +42,47 @@ var methods = {
 				
 				// Store settings
 				filterlist.data( "settings", settings );
+				
+				if ( filterlist.data("settings").search ) {
+					// Create searchfield
+					if ( !filterlist.data("settings").searchfield.length ) {
+						filterlist.data("settings").searchfield  = $("<input>").attr("type", "text").attr("id", "searchfield").attr("placeholder", filterlist.data("settings").placeholder);
+						filterlist.before( filterlist.data("settings").searchfield );
+					}
+				}
+				
+				if ( filterlist.data("settings").drilldown ) {
+					// Create filter wrapper
+					if ( !$("#filter").length ) {
+						var filter = $("<div>").attr("id", "filter");
+						filterlist.before(filter);
+					} else {
+						var filter = $("#filter");
+					}
+					// Create filterupbutton
+					if ( !filterlist.data("settings").filterupbutton.length ) {
+						filterlist.data("settings").filterupbutton = $("<a>").attr("href", "#").attr("id", "filterupbutton").text("Back");
+						filter.append( filterlist.data("settings").filterupbutton );
+					}
+					// Create filterlabel
+					if ( !filterlist.data("settings").filterlabel.length ) {
+						filterlist.data("settings").filterlabel = $("<span>").attr("id", "filterlabel");
+						filter.append( filterlist.data("settings").filterlabel );
+					}
+					// Create filterbutton
+					if ( !filterlist.data("settings").filterbutton.length ) {
+						filterlist.data("settings").filterbutton = $("<a>").attr("href", "#").attr("id", "filterbutton").text("Drill down");
+						filter.append( filterlist.data("settings").filterbutton );
+					}
+					// Create categorypopup
+					if ( !filterlist.data("settings").categorypopup.length ) {
+						filterlist.data("settings").categorypopup = $("<div>").attr("id", "categorypopup");
+						filterlist.data("settings").categorypopuplist = $("<ul>").attr("id", "categorypopuplist");
+						filterlist.data("settings").categorypopup.append( filterlist.data("settings").categorypopuplist );
+						filter.after( filterlist.data("settings").categorypopup );
+					}
+				}
+				
 				// Init selected category id
 				filterlist.data( "categoryid", 0 );
 				
@@ -148,8 +192,11 @@ var methods = {
 						_recursiveFunction(val);
 					});
 				}
-				
-				var searcharray = trim(searchfield.val()).split(" ");				
+				if ( searchfield.length ) {
+					var searcharray = trim(searchfield.val()).split(" ");
+				} else {
+					var searcharray = new Array;
+				}	
 				$(val.items).each(function() {
 					var hits = 0;
 					for ( var i = 0; i < searcharray.length; i++ ) {
